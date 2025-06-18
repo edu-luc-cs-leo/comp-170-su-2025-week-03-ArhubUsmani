@@ -44,7 +44,7 @@ def solve_quadratic(a: float, b: float, c: float) -> None:
     x2 = - b - common_factor # alternative x2 = (-b - math.sqrt(discriminant))/(2*a)
     print(f"{x1=}\n{x2=}")
 
-  def draw_diamond(height):
+def draw_diamond(height):
     # I drew a few on paper first and noticed that:
     # - The middle line has the most hashes
     # - The number of spaces goes down until the middle, then goes back up
@@ -66,7 +66,7 @@ def solve_quadratic(a: float, b: float, c: float) -> None:
         line = " " * num_spaces + "#" * num_hashes
         print(line)
 
-  def draw_right_triangle(height):
+def draw_right_triangle(height):
     # The first line starts with 1 hash mark
     # Each line after adds one more hash
     # The triangle is aligned to the left and grows line by line
@@ -116,6 +116,7 @@ solve_quadratic(1,2,3)
 solve_quadratic(1,5,1)
 greet_friends(my_friends)
 
+"""
 Reflection
 
 I noticed a few differences in my code that helped me understand what I can improve.
